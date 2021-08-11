@@ -1,8 +1,8 @@
-Smart-Track
+Itop_Smart-Track
 
 To run this app type in such commands:
-cd client => npm start
-cd server => npm start
+cd client => npm install => npm start
+cd server => npm install => npm start
 
 Technologies used:
 
@@ -11,7 +11,6 @@ Technologies used:
 - TypeScript
 - ReactJS
 - React-Router-Dom
-- React-Beautiful DND
 - Node JS
 - Cors
 - Nodemon
