@@ -1,0 +1,38 @@
+.sequence_card {
+  padding: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 110px;
+  width: 147px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(32, 43, 93, 0.08);
+  border-radius: 20px 20px 0px 20px;
+  .buttons {
+    display: flex;
+    align-items: none;
+    justify-content: space-between;
+    &__delete {
+      cursor: pointer;
+    }
+    &__edit {
+      cursor: pointer;
+    }
+  }
+  .room_number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2px;
+    margin-bottom: 10px;
+  }
+  .number {
+    margin-left: -28px;
+  }
+  .name {
+    display: flex;
+    justify-content: center;
+  }
+}

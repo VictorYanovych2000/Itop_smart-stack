@@ -1,0 +1,94 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 234px;
+  background: #f6f6ff;
+  padding-left: 50px;
+  padding-top: 21px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(32, 43, 93, 0.08);
+
+  .doctor {
+    width: 300px;
+    .reset {
+      margin-left: 84%;
+      width: 59px;
+      color: #6ac7be;
+      border: 1px solid #6ac7be;
+      border-radius: 20px;
+      margin-top: 9px;
+    }
+    .name {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 120%;
+      color: #212121;
+    }
+    .job {
+      display: flex;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #4f4f4f;
+      margin-bottom: 40px;
+    }
+    .doctor_line {
+      display: flex;
+      width: 257px;
+      height: 0px;
+      border: 1px solid #c0e7e5;
+    }
+    .doctor_query {
+      .in_line {
+        font-size: 14px;
+        color: #969696;
+        margin-right: 83px;
+      }
+      margin-top: 28px;
+      .minus {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #212155;
+        margin-right: 10px;
+      }
+      .plus {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #212155;
+        margin-left: 10px;
+        margin-right: 19px;
+      }
+      .state {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #fc7e55;
+      }
+      .stop {
+        width: 101px;
+        color: #6ac7be;
+        border: 1px solid #fc7e55;
+        border-radius: 20px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #fc7e55;
+      }
+    }
+  }
+  .line {
+    margin-top: 90px;
+    height: 0px;
+    width: 158px;
+    border: 1px solid #c0e7e5;
+    transform: rotate(90deg);
+  }
+  .rooms_wrap {
+    max-height: fit-content;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}

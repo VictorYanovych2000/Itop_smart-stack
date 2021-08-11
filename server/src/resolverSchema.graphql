@@ -1,0 +1,68 @@
+type User {
+  id: ID!
+  name: String!
+  role: String!
+  email: String!
+  phone: String!
+  rooms: [Room]
+}
+
+type Alert {
+  id: ID!
+  status: String!
+  color: String!
+}
+
+type Room {
+  id: ID!
+  name: String!
+  ownerId: ID
+  ownerName: String
+  statusAlert: Alert!
+}
+
+type Query {
+  getUsers: [User]
+  getByRole(role: String!): [User]
+  getDoctors: [User]
+  getAlerts: [Alert]
+  getRooms: [Room]
+  getRoomsById(ownerId: ID!): [Room]
+}
+
+input AlertInput {
+  id: ID
+  color: String
+  status: String
+}
+
+type Mutation {
+  createUser(
+    name: String!
+    role: String!
+    email: String!
+    phone: String!
+  ): User!
+  editUser(
+    id: ID!
+    name: String!
+    role: String!
+    email: String!
+    phone: String!
+  ): User!
+  deleteUser(id: ID!): User!
+  createAlert(status: String!, color: String!): Alert!
+  editAlert(id: ID!, status: String!, color: String!): Alert!
+  setAlert(roomId: ID!, alert: AlertInput): Alert!
+  createRoom(name: String!): Room!
+  editRoom(
+    id: ID!
+    name: String!
+    ownerId: ID
+    ownerName: String
+    statusAlert: String
+  ): Room!
+  setRoomOwner(id: ID, ownerId: ID, ownerName: String): Room!
+  nullRoomOwner(id: ID, ownerId: ID!, ownerName: String!): Room!
+  deleteRoom(id: ID!): Room!
+}

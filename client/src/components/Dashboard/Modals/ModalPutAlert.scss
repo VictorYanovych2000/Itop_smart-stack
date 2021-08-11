@@ -1,0 +1,119 @@
+.modal {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  &_dashboard_content {
+    .wrap {
+      padding-left: 10px;
+      width: 400px;
+      .choose_alerts_block {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        :hover {
+          transform: scale(1.005);
+        }
+        button {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+      .block {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 350px;
+        padding: 7px;
+        background: #f6faf9;
+        border-radius: 40px;
+      }
+      .alerts_choice {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .round {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 54px;
+        width: 54px;
+        border-radius: 40px;
+        margin-right: 28px;
+      }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 60px 20px 30px 20px;
+    background-color: #fff;
+    width: 570px;
+    height: auto;
+    border-radius: 20px;
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 27px;
+      color: #212121;
+      margin-bottom: 40px;
+    }
+    .field {
+      display: flex;
+      justify-content: flex-start;
+      font-size: 14px;
+      line-height: 18px;
+      color: #212121;
+      margin-bottom: 10px;
+    }
+    .name_input {
+      display: flex;
+      align-items: center;
+      width: 384px;
+      height: 43px;
+      border: 1px solid #dadada;
+      border-radius: 20px;
+      margin-left: -2px;
+      margin-bottom: 20px;
+      .name_type {
+        font-size: 16px;
+        line-height: 24px;
+        color: #212121;
+        margin-left: 22px;
+      }
+    }
+    .btn_wrap {
+      display: flex;
+      justify-content: center;
+      margin-left: -5px;
+    }
+    .submit {
+      color: #fff;
+      margin-top: 20px;
+      width: 81px;
+      height: 40px;
+      background: #6ac7be;
+      box-shadow: 0px 4px 20px rgba(32, 43, 93, 0.12);
+      border-radius: 20px;
+    }
+  }
+}

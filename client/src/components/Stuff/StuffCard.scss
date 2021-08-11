@@ -1,0 +1,57 @@
+.stuffCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  height: 56px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(178, 178, 233, 0.19);
+  border-radius: 20px 0px;
+  margin-bottom: 30px;
+  .doctor_id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6ac7be;
+    opacity: 0.3;
+    border-radius: 20px 0px;
+    height: 56px;
+    width: 36px;
+    margin-right: 50px;
+  }
+  .name {
+    width: auto;
+    margin-right: 80px;
+  }
+  .email {
+    margin-right: 80px;
+    width: auto;
+  }
+  .phone {
+    margin-right: 120px;
+    width: auto;
+  }
+  .colors {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+    width: 120px;
+    height: 40px;
+    &_round {
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      margin-right: 10px;
+    }
+  }
+  .buttons {
+    width: 100px;
+    img {
+      display: flex;
+      justify-content: center;
+      margin-right: 20px;
+    }
+  }
+}

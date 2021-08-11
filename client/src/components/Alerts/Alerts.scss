@@ -1,0 +1,21 @@
+.alerts {
+  padding-top: 35px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  &_box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 500px;
+  }
+}
+
+.add {
+  width: 150px;
+  height: 45px;
+  margin-left: 88%;
+  background: #6ac7be;
+  box-shadow: 0 4px 20px rgba(0, 5, 56, 0.1);
+  border-radius: 20px;
+  color: #fff;
+  margin-bottom: 59px;
+}

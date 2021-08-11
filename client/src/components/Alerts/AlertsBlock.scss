@@ -1,0 +1,39 @@
+.alerts_block {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(178, 178, 233, 0.19);
+  border-radius: 20px 0px;
+  height: 56px;
+  width: 606px;
+  margin-bottom: 30px;
+  &_number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 36px;
+    background: #6ac7be;
+    opacity: 0.4;
+    border-radius: 20px 0px;
+    margin-right: 40px;
+  }
+  &_color {
+    height: 33px;
+    width: 33px;
+    border-radius: 20px;
+    background: rgba(116, 195, 134, 0.19);
+    border: 2px solid #74c486;
+    box-sizing: border-box;
+    margin-left: 279px;
+    margin-right: 40px;
+  }
+  img {
+    margin-top: 2px;
+  }
+  .number_status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 220px;
+  }
+}
